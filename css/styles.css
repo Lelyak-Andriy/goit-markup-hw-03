@@ -28,7 +28,24 @@ body {
 
 /* Видаляємо крапки в списках */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+/* Глобальний сброс */
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Додатковий клас контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #188ce8;
 }
 
 /* Логотип */
@@ -103,10 +120,14 @@ body {
 
 /* Webstudio */
 /* HERO */
+
 .section-hero {
   background-color: var(--footer-bcg);
+  text-align: center;
 }
 .section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--text-white);
   font-weight: 900;
   font-size: 44px;
@@ -125,6 +146,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border-radius: 4px;
 }
 .service:hover,
 .service:focus {
@@ -132,15 +154,29 @@ body {
 }
 
 /* Якості  */
+.quality {
+  background-color: chartreuse;
+}
+.hidden-title {
+  display: none;
+}
 .quality-item {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.list-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .quality-text {
+  margin-top: 10px;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -148,11 +184,15 @@ body {
 }
 
 /* Зайняття */
+
 .activities-title {
+  margin-top: 0;
+  padding-top: 94px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
+  text-align: center;
 }
 
 /* Команда */
@@ -160,18 +200,25 @@ body {
   background-color: var(--secondary-bgc);
 }
 .team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
+  text-align: center;
 }
 .team-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 .profession {
+  margin-top: 10px;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
