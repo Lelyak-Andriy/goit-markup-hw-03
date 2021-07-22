@@ -40,16 +40,47 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--title-color);
+}
 /* Додатковий клас контейнер */
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid #188ce8;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Header */
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.page-header {
+  display: flex;
+  align-items: center;
 }
 
 /* Логотип */
 .logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
   color: var(--title-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -65,7 +96,13 @@ ul {
 }
 
 /* Навігація по сайту */
-.site-nav .link {
+.site-nav {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.site-nav .item {
   color: var(--title-color);
   text-decoration: none;
   font-family: inherit;
@@ -73,6 +110,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -82,6 +122,17 @@ ul {
   color: var(--accent-color);
 }
 /* Контакти */
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header-contact .item + .item {
+  margin-left: 50px;
+}
+
 .header-contact .header-contact-link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -100,19 +151,29 @@ ul {
 .footer {
   background: var(--footer-bcg);
 }
+.footer-logo {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
 .address-item {
+  margin-bottom: 9px;
   color: var(--text-white);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 .footer-contact-link {
+  display: block;
+  padding-bottom: 9px;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
+
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
