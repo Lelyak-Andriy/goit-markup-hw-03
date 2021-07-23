@@ -32,6 +32,7 @@ body {
   margin: 0;
   list-style: none;
 }
+
 /* Глобальний сброс */
 h2,
 h3,
@@ -60,6 +61,7 @@ img {
   padding-right: 15px;
   outline: 2px solid #188ce8;
 }
+/* Розбивка по секціям */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -145,6 +147,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header-contact .header-contact-link:hover,
 .header-contact .header-contact-link:focus {
   color: var(--accent-color);
@@ -186,6 +189,8 @@ img {
 /* HERO */
 
 .section-hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
   background-color: var(--footer-bcg);
   text-align: center;
 }
@@ -313,10 +318,33 @@ img {
 
 /* Portfolio */
 /* Фільтр кнопок */
+/* 
+.choice {
+  flex-direction: row;
+}
+.choice {
+  margin-right: 8px;
+*/
+.portfolio {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.choice {
+  margin-right: 8px;
+
+  border-radius: 4px;
+}
+
 .pointer {
   cursor: pointer;
 }
+
 .primary-button {
+  display: block;
+  padding: 6px 22px;
   color: var(--title-color);
   background-color: var(--secondary-bgc);
   font-family: inherit;
@@ -324,6 +352,7 @@ img {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
 }
 .primary-button:hover,
 .primary-button:focus {
@@ -346,6 +375,8 @@ img {
   line-height: 1.87;
 }
 .portfolio-link {
+  display: block;
+  margin-top: 50px;
   text-decoration: none;
 }
 
