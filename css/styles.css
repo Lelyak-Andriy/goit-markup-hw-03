@@ -59,8 +59,9 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid #188ce8;
 }
+/* outline: 2px solid #188ce8; */
+
 /* Розбивка по секціям */
 .section {
   padding-top: 94px;
@@ -79,13 +80,14 @@ img {
 .page-header {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Логотип */
 .logo {
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--title-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -103,8 +105,8 @@ img {
 /* Навігація по сайту */
 .site-nav {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .item {
@@ -130,8 +132,8 @@ img {
 .header-contact {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact .item + .item {
@@ -322,7 +324,7 @@ img {
 
 .portfolio {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   justify-content: center;
 }
 
@@ -387,7 +389,6 @@ img {
 .work {
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
 }
 .example-item {
   width: 370px;
